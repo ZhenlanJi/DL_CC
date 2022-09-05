@@ -32,3 +32,9 @@ python run.py
 # use following command to see more args
 python run.py --help
 ```
+
+## Notice
+
+1. ./backdoor_coverage.svg is the coverage pattern visualization of CC on CIFAR10 with backdoor inputs for RQ4.
+2. We use several open-source code in our project, including [DeepGauge](https://github.com/hfeniser/DeepSmartFuzzer),
+[SA](https://github.com/coinse/sadl) and [backdoor](https://github.com/csdongxian/ANP_backdoor)

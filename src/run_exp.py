@@ -33,8 +33,8 @@ scenario_dict = {
     'mnist': ['./temp', './output/model/mnist_lenet_5.pt', [1, 32, 32], 10],
     'cifar10': ['./temp', './output/model/vgg16.pt', [3, 32, 32], 10],
     'backdoor': ['./temp', './output/model/badnet_vgg.pt', [3, 32, 32], 10],
-    # 'imagenet': ['/home/zjiae/Dataset/ImageNet/ILSVRC/Data/CLS-LOC', None, [3, 224, 224], 1000],
-    'imagenet': ['/home/zjiae/Project/Causal-Coverage/temp', None, [3, 224, 224], 20],
+    # 'imagenet': ['.../ImageNet/ILSVRC/Data/CLS-LOC', None, [3, 224, 224], 1000],
+    'imagenet': ['../', None, [3, 224, 224], 20],
 }
 
 
@@ -71,7 +71,7 @@ def get_basic_dataloader(scenario, batch_size=100):
                                               (0.1307,), (0.3081,))
                                       ]))
     elif scenario == 'imagenet':
-        # train_dataset = datasets.ImageFolder(root=os.path.join('/home/zjiae/Dataset/ImageNet/ILSVRC/Data/CLS-LOC', 'train'),
+        # train_dataset = datasets.ImageFolder(root=os.path.join(dataset_addr, 'train'),
         #                                      transform=transforms.Compose([
         #                                          #  transforms.RandomResizedCrop(
         #                                          #      224),
@@ -574,10 +574,10 @@ if __name__ == "__main__":
                         type=int, default=1000,
                         help='setup size')
     parser.add_argument('--trigger_info', '-ti',
-                        type=str, default='/home/zjiae/Project/Causal-Coverage/data/badnet_trigger.pt',
+                        type=str, default='.../badnet_trigger.pt',
                         help='trigger info')
     parser.add_argument('--backdoor_model',
-                        type=str, default='/home/zjiae/Project/Causal-Coverage/output/model/badnet_vgg.pt',
+                        type=str, default='.../badnet_vgg.pt',
                         help='backdoor model')
     args = parser.parse_args()
     print(args)
