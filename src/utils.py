@@ -53,7 +53,7 @@ def is_valid(module):
     return (isinstance(module, nn.Linear)
             or isinstance(module, nn.Conv2d)
             or isinstance(module, nn.Conv1d)
-            or isinstance(module, Bottleneck)
+            # or isinstance(module, Bottleneck)
             # or isinstance(module, nn.MaxPool2d)
             # or isinstance(module, nn.Conv3d)
             # or isinstance(module, nn.RNN)
