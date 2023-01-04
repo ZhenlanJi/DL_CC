@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import torchvision
 import numpy as np
 import copy
-from scipy.stats import chisquare
+# from scipy.stats import chisquare
 
 from torchvision.models.resnet import Bottleneck
 from torch.utils.data import Dataset
