@@ -22,11 +22,12 @@ numpy
 causallearn
 torchattacks
 ```
+We also provide a `ref_env.yml` file for you to automatically install the dependencies.
 
 ## Usage
 
 ```bash
-# default run our rq1 experiment of CC on CIFAR10
+# default run CC on CIFAR10
 python run.py
 
 # use following command to see more args
