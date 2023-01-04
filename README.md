@@ -3,7 +3,9 @@
 # DL_CC
 This repository belongs to our submitted manuscript:
 > CC: Causality-Aware Coverage Criterion for Deep Neural Networks
+
 You can find the code for our paper in this repository.
+Also, you can find the archived version of this repository on [Software Heritage](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/ZhenlanJi/DL_CC)
 
 ## Introduction
 Deep neural network (DNN) testing approaches have grown fast in recent years to test the correctness and robustness of DNNs. In particular, DNN coverage criteria are frequently used to evaluate the quality of a test suite, and a number of coverage criteria based on neuron-wise, layer-wise, and path-trace-wise coverage patterns have been published to date. However, we see that existing criteria are insufficient to represent how one neuron would influence subsequent neurons; hence, we lack a concept of how neurons, when functioning as causes and effects, might jointly make a DNN prediction.
