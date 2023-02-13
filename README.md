@@ -1,5 +1,7 @@
 [![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/ZhenlanJi/DL_CC/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/ZhenlanJi/DL_CC)
 
+[![DOI](https://zenodo.org/badge/531866736.svg)](https://zenodo.org/badge/latestdoi/531866736)
+
 # DL_CC
 This repository belongs to our submitted manuscript:
 > CC: Causality-Aware Coverage Criterion for Deep Neural Networks
