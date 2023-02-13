@@ -1,0 +1,15 @@
+To run the code, you need to install the following dependencies:
+
+```
+python 3.9
+torch
+torchvision
+pyflann
+scipy
+sklearn
+numpy
+causallearn
+torchattacks
+```
+
+We also provide a `ref_env.yml` file for you to automatically install the dependencies.
